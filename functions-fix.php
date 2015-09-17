@@ -4,7 +4,7 @@
 */
 
  function fix_wpadmin_css() {
-  echo"<style>.wp-has-current-submenu+.wp-submenu{position: static !important; } </style>"; 
+  echo"<style>#adminmenu { transform: translateZ(0); } </style>"; 
   //Add other classes if you wish, to stylize your editor or custom post types.
   }
   add_action('admin_head', 'fix_wpadmin_css', 11);
